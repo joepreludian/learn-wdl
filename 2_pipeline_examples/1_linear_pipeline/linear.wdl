@@ -8,7 +8,7 @@ workflow ga4ghMd5 {
     call md5 { input: inputFile=inputFile }
     call checkMd5 { input: inputFile=md5.value,knownMd5Sum=knownMd5Sum }
         meta {
-        author: "Brian O’Connor"
+        author: "Brian O’Connor - TEST branch_test_2"
         email: "brian@somewhere.com"
         description: "a simple workflow that calculates an md5 checksum and then checks it"
     }
