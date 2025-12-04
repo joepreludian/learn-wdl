@@ -3,6 +3,7 @@ version 1.0
 workflow HelloInput {
   input {
     String name
+    String hello = "Hello from branch_test2 - COMMIT 1"
   }
   call WriteGreeting {
     input : name = name
