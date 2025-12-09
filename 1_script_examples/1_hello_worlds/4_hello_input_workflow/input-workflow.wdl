@@ -2,10 +2,10 @@ version 1.0
 
 workflow HelloInput {
   input {
-    String name = "Hello Pipeline MASTER"
+    String name = "Hello from master"
   }
   call WriteGreeting {
-    input : name 
+    input : name = name
   }
 }
 
@@ -25,5 +25,3 @@ task WriteGreeting {
    docker: 'ubuntu:latest'
   }
 }
-
-
