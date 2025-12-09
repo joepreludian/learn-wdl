@@ -5,7 +5,7 @@ workflow HelloInput {
     String name
   }
   call WriteGreeting {
-    input : name = name
+    input : name = name = "Hello Pipeline MASTER"
   }
 }
 
