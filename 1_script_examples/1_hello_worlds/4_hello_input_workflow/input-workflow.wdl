@@ -2,7 +2,7 @@ version 1.0
 
 workflow HelloInput {
   input {
-    String name = name = "Hello Pipeline MASTER"
+    String name = "Hello Pipeline MASTER"
   }
   call WriteGreeting {
     input : name 
